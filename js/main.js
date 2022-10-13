@@ -88,6 +88,19 @@ new Swiper(".promotion .swiper-container", {
   },
 });
 
+new Swiper(".awards .swiper-container", {
+  autoplay: true, // 자동 재생 여부
+  loop: true, // 반복 재생 여부
+  spaceBetween: 30, // 슬라이드 사이 여백
+  slidesPerView: 5, // 한 번에 보여줄 슬라이드 개수
+  // slidesPerGroup: 5, // 한 번에 슬라이드 할 개수(전체 개수로 나뉘어야 함)
+  navigation: {
+    // 슬라이드 이전/다음 버튼 사용 여부
+    prevEl: ".awards .swiper-prev", // 이전 버튼 선택자
+    nextEl: ".awards .swiper-next", // 다음 버튼 선택자
+  },
+});
+
 // 슬라이드 영역 요소 검색
 const promotionEl = document.querySelector(".promotion");
 // 슬라이드 영역를 토글하는 버튼 검색
